@@ -1,0 +1,118 @@
+<html>
+<head>
+    <title>habibty</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        body{
+            flex-wrap: wrap;
+            display: flex;
+        }
+        .main{
+            width: 100%;
+            height: 100vh;
+            background-image: url(jkik.png);
+            background-size: cover;
+        }
+        .box{
+            position: absolute;
+            background-color: aliceblue;
+            width: 43%;
+            height: 100vh;
+        }
+        .mbox{
+            height: 53%;
+            width: 60%;
+            margin-left: 20%;
+            margin-top: 10%;
+            border: 1px solid black;
+            border-radius: 10px;
+            transition: all 1s;
+        }
+        .mbox:hover{
+            height: 80%;
+        }
+        .img{
+            position: absolute;
+            width: 40%;
+            height: 35%;
+            margin-top: 10%;
+            margin-left: 10%;
+            border-radius: 15px;
+            background-image: url(2021_07_08_21_25_IMG_8767.PNG);
+            background-size: cover;
+            background-position: top;
+        }
+        .mbox:hover .img{
+            animation: slide 10s infinite alternate;
+        }
+        .m{
+            text-align: center;
+            width: 30%;
+            margin-top: 90%;
+            margin-left: 35%;
+            transition: all 1s;
+            opacity: 0;
+        }
+        .mbox:hover .m{
+            opacity: 1;
+        }
+        @keyframes slide{
+            0%{
+                background-image: url(2021_07_08_21_25_IMG_8767.PNG);
+            }
+            25%{
+                background-image: url(2021_02_03_23_32_IMG_4217.PNG);
+            }
+            50%{
+                background-image: url(IMG_1043.JPG);
+            }
+            75%{
+                background-image: url(2021_06_17_20_02_IMG_7833.JPG);
+            }
+            100%{
+                background-image: url(2021_05_30_06_29_IMG_7228.JPG);
+            }
+        }
+        .talk{
+            padding: 10px;
+            font-size: 23px;
+            text-align: center;
+            width: 80%;
+            margin-top: 5%;
+            margin-left: 10%;
+            opacity: 0;
+            transition: all 1s;
+        }
+        .mbox:hover .talk{
+            opacity: 1;
+        }
+        .bubble1{
+            position: absolute;
+            right: 27%;
+            top: 0%;
+            height:100px;
+            width: 100px;
+            border-radius: 50%;
+            background-image: url(2021_07_09_14_59_IMG_8824klnkl.png);
+            transform: rotate(80deg);
+            background-size: cover;
+            background-position: top;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+                <div class="bubble1"></div>
+        <div class="box">
+            <div class="mbox">
+                <div class="img"></div>
+                <h1 class="m">ليه مريم</h1>
+                <div class="talk">لانها الشمس التي اضاءه عتمتي لانها اليد التي اخرجتني من عزلتي لانها البسمه التي علمتني قيمه الحياه في كل ثانيه معها لان عيناها علمتني عدم الاكتفاء لان ضحكتها علمتني معني الاشتياق فكيف لا تكون مريم بحبك</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
